@@ -28,13 +28,12 @@ dependencies {
     implementation "org.scala-lang:scala-reflect:${project.ext.scalaVersion}.10"
     implementation "org.scala-lang:scala-compiler:${project.ext.scalaVersion}.10"
 
-    implementation "org.apache.spark:spark-mllib_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
     implementation "org.apache.spark:spark-sql_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
-    implementation "org.apache.spark:spark-graphx_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
     implementation "org.apache.spark:spark-launcher_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
     implementation "org.apache.spark:spark-catalyst_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
     implementation "org.apache.spark:spark-streaming_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
     implementation "org.apache.spark:spark-core_${project.ext.scalaVersion}:${project.ext.sparkVersion}"
 
     implementation group: 'commons-io', name: 'commons-io', version: '2.5'
+    implementation 'com.mysql:mysql-connector-j:8.1.0'
 }
